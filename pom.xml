@@ -35,6 +35,7 @@
   <modules>
     <module>platform-ui-web-eXoResources</module>
     <module>platform-ui-webui-core</module>
+    <module>platform-ui-skin</module>
   </modules>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/platform-ui.git</connection>
