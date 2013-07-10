@@ -22,7 +22,9 @@
                     <execution>
                         <id>bootstrap</id>
                         <configuration>
-                            <sourceDirectory>${basedir}/src/main/less/bootstrap/less</sourceDirectory>
+                            <!--Should be the final one because the less folder should be outside the webapp in /src/main/less   -->
+                            <!--<sourceDirectory>${basedir}/src/main/less/bootstrap/less</sourceDirectory>-->
+                            <sourceDirectory>${project.basedir}/src/main/webapp/skin/bootstrap/less</sourceDirectory>
                             <outputDirectory>${project.build.directory}/${project.build.finalName}/skin/bootstrap/css</outputDirectory>
                             <compress>false</compress>
                             <includes>
@@ -37,6 +39,8 @@
                     <execution>
                         <id>core</id>
                         <configuration>
+                           <!-- SourceDirectory shouldn't exist and we should have as default the lesss folder in /src/main/less     -->
+                            <sourceDirectory>${project.basedir}/src/main/webapp/skin/less</sourceDirectory>
                             <outputDirectory>${project.build.directory}/${project.build.finalName}/skin/css</outputDirectory>
                             <compress>false</compress>
                             <includes>
@@ -54,6 +58,7 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
 
