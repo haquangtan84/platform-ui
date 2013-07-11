@@ -88,6 +88,18 @@
       </dependency>
       <dependency>
         <groupId>org.exoplatform.platform-ui</groupId>
+        <artifactId>platform-ui-skin</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+      </dependency>
+      <dependency>
+        <groupId>org.exoplatform.platform-ui</groupId>
+        <artifactId>platform-ui-skin</artifactId>
+        <version>${project.version}</version>
+        <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>org.exoplatform.platform-ui</groupId>
         <artifactId>platform-ui-webui-core</artifactId>
         <version>${project.version}</version>
       </dependency>
