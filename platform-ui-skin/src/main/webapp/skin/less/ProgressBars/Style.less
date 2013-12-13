@@ -16,7 +16,7 @@
 // upload files 
 .progressBarFrame {	
 	 margin: 0 0 25px 0;
-	 line-height:24px;
+	  line-height:20px;
 	& > div {
 		margin: 3px 0 0 0;
 	}
@@ -32,7 +32,7 @@
 	}
 	.percent {
 		padding:0 7px 0 7px;
-		width: 30px;
+		width: 30px;		
 	}
 	.deleteFileLabel {
 		margin: 0 0 0 5px;
@@ -43,7 +43,6 @@
 	}
 }
 .uploadButton {
-	.center();
 	.moreFiles {
 		display: inline-block;
 		color: @grayLight;
@@ -54,6 +53,18 @@
 	   display: inline-block;
 		margin-left: 5px;
 		color: @grayLight;
+	}
+}
+
+.uiPopup {
+	.controls-full{
+		.uploadButton {
+			.center();
+		}
+	}
+	
+	.uploadContainer {
+		padding: 0 0 0 8px;
 	}
 }
 

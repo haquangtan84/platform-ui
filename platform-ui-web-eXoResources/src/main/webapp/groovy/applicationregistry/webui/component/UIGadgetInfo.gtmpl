@@ -6,7 +6,7 @@
 	EntityEncoder encoder = HTMLEntityEncoder.getInstance();
 	def gadget = uicomponent.getGadget();
 	boolean selectorRender = uicomponent.getChild(UICategorySelector.class).isRendered();
-	String srcBGError = "/eXoResources/skin/sharedImages/Icon80x80/DefaultPortlet.png";
+	String srcBGError = "/eXoResources/skin/images/Icons/Icon80x80/DefaultPortlet.png";
 	String categoryNames = uicomponent.getCategorieNames();
 	String gadgetThumbnail = gadget.getThumbnail();
 	if(gadgetThumbnail == null || gadgetThumbnail.length() == 0){
@@ -56,7 +56,7 @@
 									<% if (categoryNames.equals("")) { %>
 											<%=_ctx.appRes("UIGadgetInfo.label.categories.guide")%><br/>
 											<% if (!selectorRender) { %>
-											<a href="#" onclick="<%= uicomponent.event("ShowCategories") %>" style="text-decoration:underline;">											
+											<a href="#" onclick="<%= uicomponent.event("ShowCategories") %>" >											
 													<%=_ctx.appRes("UIGadgetInfo.label.categories.clickHere")%>											
 											</a>
 											<% } %>

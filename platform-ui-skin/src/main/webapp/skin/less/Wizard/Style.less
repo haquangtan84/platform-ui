@@ -1,4 +1,3 @@
-
 .uiWizard {
 	padding: 20px;
 	.wizardStepTitleBar {
@@ -47,6 +46,10 @@
 				}
 			}
 		}
+		.NoPageSelecter .selectedPageInfo {
+			margin-left: 0;
+			border: none;
+		}
 	}
 	
 	.wizardControlBar {
@@ -86,81 +89,95 @@
 			.container {
 				padding: 75px;
 				width: auto;
+				.tooltip {
+					.tooltip-inner {
+						max-width: 330px;
+						white-space: nowrap;
+		      		}
+				}
 			}
 		}
-		
+    // Function set size for layouts
+		.commonLayout(){
+      .size(125px, 90%);
+			min-width: 185px;
+      background: url('/eXoResources/skin/images/Container/ItemSelector.png') no-repeat center top transparent;
+    }
 		.EmptyLayout {
-			width: 183px; height: 123px;
+      .commonLayout;
 			margin: auto;
-			background: url('/eXoResources/skin/images/Wizard/selectLayout.png') no-repeat top left;
 		}
-		
-		.DesktopLayout {
-			width: 183px; height: 123px;
-			margin: auto;
-			background: url('/eXoResources/skin/images/Wizard/selectLayout.png') no-repeat top left;
-		}
-		
+	
 		.DashboardLayout {
-			width: 183px; height: 123px;
+			.commonLayout;
 			margin: auto;
-			background: url('/eXoResources/skin/images/Wizard/selectLayout.png') no-repeat left -123px;
-		}
-		
-		.TwoRowsLayout {
-			width: 183px; height: 123px;
-			margin: auto;
-			background: url('/eXoResources/skin/images/Wizard/selectLayout.png') no-repeat left -369px;
-		}
-		
-		.ThreeRowsLayout {
-			width: 183px; height: 123px;
-			margin: auto;
-			background: url('/eXoResources/skin/images/Wizard/selectLayout.png') no-repeat left -492px;
+      background-position: center -1500px;
 		}
 		
 		.TwoColumnsLayout {
-			width: 183px; height: 123px;
+			.commonLayout;
 			margin: auto;
-			background: url('/eXoResources/skin/images/Wizard/selectLayout.png') no-repeat left -615px;
+      background-position: center -1125px;
 		}
 		
 		.ThreeColumnsLayout {
-			width: 183px; height: 123px;
+			.commonLayout;
 			margin: auto;
-			background: url('/eXoResources/skin/images/Wizard/selectLayout.png') no-repeat left -738px;
+      background-position: center -1250px;
+		}
+		
+		.TwoColumnsOneRowLayout {
+			.commonLayout;
+			margin: auto;
+      background-position: center -500px;
+		}
+		
+		.TwoColumnsTwoRowsLayout {
+			.commonLayout;
+			margin: auto;
+      background-position: center -625px;
+		}
+		
+		.OneRowsLayout {
+			.commonLayout;
+			margin: auto;
+      background-position: center -125px;
+		}
+		
+		.TwoRowsLayout {
+			.commonLayout;
+			margin: auto;
+      background-position: center -250px;
+		}
+		
+		.ThreeRowsLayout {
+			.commonLayout;
+			margin: auto;
+      background-position: center -375px;
 		}
 		
 		.OneRowTwoColumnsLayout {
-			width: 183px; height: 123px;
+			.commonLayout;
 			margin: auto;
-			background: url('/eXoResources/skin/images/Wizard/selectLayout.png') no-repeat left -1353px;
-		}
-		
-		 .TwoColumnsOneRowLayout {
-			width: 183px; height: 123px;
-			margin: auto;
-			background: url('/eXoResources/skin/images/Wizard/selectLayout.png') no-repeat left -861px;
-		}
-		
-		.ThreeRowsTwoColumnsLayout {
-			width: 183px; height: 123px;
-			margin: auto;
-			background: url('/eXoResources/skin/images/Wizard/selectLayout.png') no-repeat left -984px;
+      background-position: center -1375px;
 		}
 		
 		.TwoTabsLayout {
-			width: 183px; height: 123px;
+			.commonLayout;
 			margin: auto;
-			background: url('/eXoResources/skin/images/Wizard/selectLayout.png') no-repeat left -1107px;
+      background-position: center -1625px;
 		}
 		
 		.ThreeTabsLayout {
-			width: 183px; height: 123px;
+			.commonLayout;
 			margin: auto;
-			background: url('/eXoResources/skin/images/Wizard/selectLayout.png') no-repeat left -1230px;
+      background-position: center -1750px;
+		}
+		
+		.ThreeRowsTwoColumnsLayout {
+			.commonLayout;
+			margin: auto;
+      background-position: center -750px;
 		}
 	}
-	
-	
 }
