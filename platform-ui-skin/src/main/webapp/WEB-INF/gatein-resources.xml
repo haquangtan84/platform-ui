@@ -102,7 +102,7 @@
     <application-name>wiki</application-name>
     <portlet-name>WikiPortlet</portlet-name>
     <skin-name>Default</skin-name>
-    <css-path>/skin/css/wiki/less/wiki.css</css-path>
+    <css-path>/skin/css/wiki/wiki.css</css-path>
     <css-priority>1</css-priority>
   </portlet-skin>
   
@@ -166,12 +166,22 @@
     <css-priority>1</css-priority>
   </portlet-skin>    
   
+  <!-- calendar -->
+  
+  <portlet-skin>
+    <application-name>calendar</application-name>
+    <portlet-name>CalendarPortlet</portlet-name>
+    <skin-name>Default</skin-name>
+    <css-path>/skin/css/calendar/calendar.css</css-path>
+    <css-priority>1</css-priority>
+  </portlet-skin>
+  
   <!--- social -->
   
   <portal-skin>
     <skin-name>Default</skin-name>
     <skin-module>Social</skin-module>
-    <css-path>/skin/css/social/skin/less/social.css</css-path>
+    <css-path>/skin/css/social/skin/social.css</css-path>
   </portal-skin>
   
    <!--social: GadgetPortlet skins -->
@@ -406,43 +416,43 @@
 	    <application-name>platformNavigation</application-name>
 	    <portlet-name>UICompanyNavigationPortlet</portlet-name>
 	    <skin-name>Default</skin-name>
-	    <css-path>/skin/css/platform/portlets/platformNavigation/less/UICompanyNavigationPortlet/Style.css</css-path>
+	    <css-path>/skin/css/platform/portlets/platformNavigation/UICompanyNavigationPortlet/Style.css</css-path>
 	</portlet-skin>
 	<portlet-skin>
 	    <application-name>platformNavigation</application-name>
 	    <portlet-name>UIBreadCrumbsNavigationPortlet</portlet-name>
 	    <skin-name>Default</skin-name>
-	    <css-path>/skin/css/platform/portlets/platformNavigation/less/UIBreadCrumbsNavigationPortlet/Style.css</css-path>
+	    <css-path>/skin/css/platform/portlets/platformNavigation/UIBreadCrumbsNavigationPortlet/Style.css</css-path>
 	</portlet-skin>
 	<portlet-skin>
 	    <application-name>platformNavigation</application-name>
 	    <portlet-name>UIGroupsNavigationPortlet</portlet-name>
 	    <skin-name>Default</skin-name>
-	    <css-path>/skin/css/platform/portlets/platformNavigation/less/UIGroupsNavigationPortlet/Style.css</css-path>
+	    <css-path>/skin/css/platform/portlets/platformNavigation/UIGroupsNavigationPortlet/Style.css</css-path>
 	</portlet-skin>
 	<portlet-skin>
 	    <application-name>platformNavigation</application-name>
 	    <portlet-name>UIHelpPlatformToolbarPortlet</portlet-name>
 	    <skin-name>Default</skin-name>
-	    <css-path>/skin/css/platform/portlets/platformNavigation/less/UIHelpPlatformToolbarPortlet/Style.css</css-path>
+	    <css-path>/skin/css/platform/portlets/platformNavigation/UIHelpPlatformToolbarPortlet/Style.css</css-path>
 	</portlet-skin>
 	<portlet-skin>
 	    <application-name>platformNavigation</application-name>
 	    <portlet-name>UISearchPlatformToolbarPortlet</portlet-name>
 	    <skin-name>Default</skin-name>
-	    <css-path>/skin/css/platform/portlets/platformNavigation/less/UISearchPlatformToolbarPortlet/Style.css</css-path>
+	    <css-path>/skin/css/platform/portlets/platformNavigation/UISearchPlatformToolbarPortlet/Style.css</css-path>
 	</portlet-skin>
 	<portlet-skin>
 	    <application-name>platformNavigation</application-name>
 	    <portlet-name>UISpaceNavigationPortlet</portlet-name>
 	    <skin-name>Default</skin-name>
-	    <css-path>/skin/css/platform/portlets/platformNavigation/less/UISpaceNavigationPortlet/Style.css</css-path>
+	    <css-path>/skin/css/platform/portlets/platformNavigation/UISpaceNavigationPortlet/Style.css</css-path>
 	</portlet-skin>
 	<portlet-skin>
 	    <application-name>platformNavigation</application-name>
 	    <portlet-name>UIUserNavigationPortlet</portlet-name>
 	    <skin-name>Default</skin-name>
-	    <css-path>/skin/css/platform/portlets/platformNavigation/less/UIUserNavigationPortlet/Style.css</css-path>
+	    <css-path>/skin/css/platform/portlets/platformNavigation/UIUserNavigationPortlet/Style.css</css-path>
 	</portlet-skin>
 	
 	<!--- platform: homepage -->
@@ -450,35 +460,35 @@
     <application-name>homepage-portlets</application-name>
     <portlet-name>WhoIsOnLinPortlet</portlet-name>
     <skin-name>Default</skin-name>
-    <css-path>/skin/css/platform/portlets/homepage/less/whoisonline.css</css-path>
+    <css-path>/skin/css/platform/portlets/homepage/whoisonline.css</css-path>
     <css-priority>1</css-priority>
   </portlet-skin>
   <portlet-skin>
     <application-name>homepage-portlets</application-name>
     <portlet-name>GettingStartedPortlet</portlet-name>
     <skin-name>Default</skin-name>
-    <css-path>/skin/css/platform/portlets/homepage/less/gettingstarted.css</css-path>
+    <css-path>/skin/css/platform/portlets/homepage/gettingstarted.css</css-path>
     <css-priority>1</css-priority>
   </portlet-skin>
   <portlet-skin>
     <application-name>homepage-portlets</application-name>
     <portlet-name>SuggestionsPeopleSpace</portlet-name>
     <skin-name>Default</skin-name>
-    <css-path>/skin/css/platform/portlets/homepage/less/suggestions.css</css-path>
+    <css-path>/skin/css/platform/portlets/homepage/suggestions.css</css-path>
     <css-priority>1</css-priority>
   </portlet-skin>
   <portlet-skin>
     <application-name>homepage-portlets</application-name>
     <portlet-name>Invitations</portlet-name>
     <skin-name>Default</skin-name>
-    <css-path>/skin/css/platform/portlets/homepage/less/invitations.css</css-path>
+    <css-path>/skin/css/platform/portlets/homepage/invitations.css</css-path>
     <css-priority>1</css-priority>
   </portlet-skin>  
   <portlet-skin>
     <application-name>homepage-portlets</application-name>
     <portlet-name>HomePageCalendarPortlet</portlet-name>
     <skin-name>Default</skin-name>
-    <css-path>/skin/css/platform/portlets/homepage/less/calendar.css</css-path>
+    <css-path>/skin/css/platform/portlets/homepage/calendar.css</css-path>
     <css-priority>1</css-priority>
   </portlet-skin>
   
@@ -487,7 +497,7 @@
 		<application-name>platform-branding</application-name>
 		<portlet-name>Branding</portlet-name>
 		<skin-name>Default</skin-name>
-		<css-path>/skin/css/platform/portlets/branding/less/branding.css</css-path>
+		<css-path>/skin/css/platform/portlets/branding/branding.css</css-path>
 		<css-priority>1</css-priority>
 	</portlet-skin>
   
@@ -496,7 +506,7 @@
   <portal-skin>
     <skin-name>Default</skin-name>
     <skin-module>WCMSkin</skin-module>
-    <css-path>/skin/css/ecms/skin/less/ecms-resources-wcmskin.css</css-path>
+    <css-path>/skin/css/ecms/skin/ecms-resources-wcmskin.css</css-path>
     <css-priority>1</css-priority>
   </portal-skin>
   
