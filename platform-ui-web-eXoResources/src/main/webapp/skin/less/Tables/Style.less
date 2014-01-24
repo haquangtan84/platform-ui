@@ -1,14 +1,17 @@
-
-.uiGrid.table { 
+.table { 
 	border: 1px solid @tableBorder;
+	width: 100%;
+ 	margin-bottom: @baseLineHeight;
 	thead tr:first-child {
 		.box-shadow(0px 1px 2px -1px rgba(13,13,13,0.2)); 
 	}
 	td ,th {
-		font-size: 13px;
+		font-size: @baseFontSize;
 		border-left: 1px solid @tableBorder;
 		padding: 8px 18px;
 		vertical-align: middle;
+    	line-height: @baseLineHeight;
+   		text-align: left;
 		&.center {
 				text-align: center;
 			}
@@ -61,7 +64,10 @@
 	}		
 }
 
-.uiGrid.rounded-corners {
+
+
+
+.rounded-corners {
 	border-collapse: separate;
 	.box-shadow(0 1px 2px rgba(13,13,13,0.1));
 	.border-radius(@baseBorderRadius);
@@ -94,8 +100,8 @@
 
 /*table rounder corners bottom border */ 
 
-.uiGrid.rounded-corners-bottom {
-	.uiGrid.rounded-corners; /*call rounded corners table*/
+.rounded-corners-bottom {
+	.rounded-corners; /*call rounded corners table*/
 	.border-radius(0 0 @baseBorderRadius @baseBorderRadius);
 	thead:first-child tr:first-child th:first-child,
 	tbody:first-child tr:first-child td:first-child {
@@ -114,18 +120,111 @@
 
 /*table clear cell border */
 
-.uiGrid.no-border-cell {
+.no-border-cell {
 	tr td, 
 	tr th {
 		border-left: 0;
 	}	
 }
 
-.uiGrid.table-hover {
+.table-hover {
 	tbody {
 		tr:hover td,
 		tr:hover th {
 			background-color: @tableBackgroundHover;
 		}
 	}
+}
+
+
+// TABLE CELL SIZING
+// -----------------
+
+// Reset default grid behavior
+table td[class*="col"],
+table th[class*="col"],
+.row-fluid table td[class*="col"],
+.row-fluid table th[class*="col"] {
+  display: table-cell;
+  float: none; // undo default grid column styles
+  margin-left: 0; // undo default grid column styles
+}
+
+// Change the column widths to account for td/th padding
+.table td,
+.table th {
+  &.col1     { .tableColumns(1); }
+  &.col2     { .tableColumns(2); }
+  &.col3     { .tableColumns(3); }
+  &.col4     { .tableColumns(4); }
+  &.col5     { .tableColumns(5); }
+  &.col6     { .tableColumns(6); }
+  &.col7     { .tableColumns(7); }
+  &.col8     { .tableColumns(8); }
+  &.col9     { .tableColumns(9); }
+  &.col10    { .tableColumns(10); }
+  &.col11    { .tableColumns(11); }
+  &.col12    { .tableColumns(12); }
+}
+
+
+
+// TABLE BACKGROUNDS
+// -----------------
+// Exact selectors below required to override .table-striped
+
+.table tbody tr {
+  &.success td {
+    background-color: @successBackground;
+  }
+  &.error td {
+    background-color: @errorBackground;
+  }
+  &.warning td {
+    background-color: @warningBackground;
+  }
+  &.info td {
+    background-color: @infoBackground;
+  }
+}
+
+// Hover states for .table-hover
+.table-hover tbody tr {
+  &.success:hover td {
+    background-color: darken(@successBackground, 5%);
+  }
+  &.error:hover td {
+    background-color: darken(@errorBackground, 5%);
+  }
+  &.warning:hover td {
+    background-color: darken(@warningBackground, 5%);
+  }
+  &.info:hover td {
+    background-color: darken(@infoBackground, 5%);
+  }
+}
+ 
+ 
+
+.uiTable {
+	.table;
+}
+
+.uiTableStriped{
+	.table-striped;
+}
+
+.uiTableRounded {
+	.rounded-corners;
+}
+
+.uiTableRoundedBottom{
+	.rounded-corners-bottom;
+}
+.uiTableWithoutBorder {
+	.no-border-cell;
+}
+
+.uiTableHover {
+	.table-hover;
 }

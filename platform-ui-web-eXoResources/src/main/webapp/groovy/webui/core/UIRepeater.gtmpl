@@ -15,7 +15,7 @@
   DateFormat dateFormat = null;
 %>
 <div id="$uicomponent.id">
-    <table class="uiGrid table table-hover table-striped" cellspacing="0">
+    <table class="uiTable uiTableHover uiTableStriped" cellpadding="0" border="0" cellspacing="0">
         <thead>
             <tr>
                 <%if(name != null) {%>

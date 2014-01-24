@@ -40,7 +40,7 @@
       </div>
 			<%}%>
       
-			<table id="UIListUsers" class="uiGrid table table-hover table-striped">
+			<table id="UIListUsers" class="uiTable uiTableHover uiTableStriped">
 				<thead>
 					<tr>
 						<% if(isMulti) {%>
