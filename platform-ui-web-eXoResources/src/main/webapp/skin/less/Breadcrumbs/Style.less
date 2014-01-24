@@ -27,6 +27,9 @@
 
 	li {
 		vertical-align: middle;
+		display: inline-block;
+		.ie7-inline-block();
+    	text-shadow: 0 1px 0 @white;
 	}
 	
 	.active {
@@ -37,4 +40,8 @@
 			color: @grayLight;
 		}
 	}
+}
+
+.uiBreadcrumb {
+	.breadcrumb;	
 }
