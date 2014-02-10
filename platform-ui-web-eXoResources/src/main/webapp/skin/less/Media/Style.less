@@ -1,0 +1,50 @@
+// uiMedia styles
+// -------------------------
+
+// Clear the floats
+.uiMedia,
+.uiMediaBody {
+  overflow: hidden;
+  *overflow: visible;
+  zoom: 1;
+}
+
+// Proper spacing between instances of .uiMedia
+.uiMedia,
+.uiMedia .uiMedia {
+  margin-top: 15px;
+}
+.uiMedia:first-child {
+  margin-top: 0;
+}
+
+// For images and videos, set to block
+.uiMediaObject {
+  display: block;
+}
+
+// Reset margins on headings for tighter default spacing
+.uiMediaHeading {
+  margin: 0 0 5px;
+}
+
+
+// Media image alignment
+// -------------------------
+
+.uiMedia .pull-left {
+  margin-right: 10px;
+}
+.uiMedia .pull-right {
+  margin-left: 10px;
+}
+
+
+// Media list variation
+// -------------------------
+
+// Undo default ul/ol styles
+.uiMediaList {
+  margin-left: 0;
+  list-style: none;
+}
