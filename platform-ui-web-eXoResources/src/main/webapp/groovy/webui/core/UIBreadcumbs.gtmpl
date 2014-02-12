@@ -14,7 +14,7 @@
 	def useAJAX = uicomponent.isUseAjax();
 %>
 
-<ul class="breadcrumb">
+<ul class="breadcrumbs">
 	<li>
 		<i class="uiIconTree uiIconLightGray"></i>
 	</li>

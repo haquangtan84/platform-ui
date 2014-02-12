@@ -16,7 +16,7 @@
 <div class="UIPortletInfo" id="$uicomponent.id">	
 
     <div class="uiBreadcrumb">
-      <ul class="breadcrumb">
+      <ul class="breadcrumbs">
         <li><%=_ctx.appRes("UIPortletManagement.title." + portlet.getType())%><span class="uiIconMiniArrowRight"></span></li>
         <li><%=portlet.getPortletGroup()%><span class="uiIconMiniArrowRight uiIconLightGray"></span></li>
         <li class='active'><span class="uiIconMiniArrowRight uiIconLightGray"></span><%=portlet.getDisplayName() %></li>
